@@ -1,5 +1,6 @@
 import React from "react";
 import DetailledProductDescription from "./DetailledProductDescription";
+import urlFor from "/src/imageUrlBuilder"; // Import the urlFor function
 
 function DetailledProductThumbnail({ images, title, price, oldPrice, data }) {
     // Function to chunk the images array into groups of 3
@@ -21,7 +22,7 @@ function DetailledProductThumbnail({ images, title, price, oldPrice, data }) {
         <div className="row">
             <div className="col-md-6 col-xs-12">
                 <div>
-                    <img src={images[0]} alt="" className="img-fluid wc-image" />
+                    <img src={urlFor(images[0]).url()} alt="" className="img-fluid wc-image" /> {/* Generate image URL */}
                 </div>
                 <br />
                 {imageChunks.map((chunk, rowIndex) => (
@@ -29,7 +30,7 @@ function DetailledProductThumbnail({ images, title, price, oldPrice, data }) {
                         {chunk.map((image, index) => (
                             <div className="col-sm-4 col-xs-6" key={index}>
                                 <div>
-                                    <img src={image} alt="" className="img-fluid" />
+                                    <img src={urlFor(image).width(300).url()} alt="" className="img-fluid" /> {/* Generate image URL */}
                                 </div>
                                 <br />
                             </div>

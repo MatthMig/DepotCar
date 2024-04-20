@@ -1,9 +1,19 @@
-import React from "react";
-import productsData from '../cars.json';
+import React, { useEffect, useState } from "react";
+import client from '../sanityClient'; // Import the Sanity client
 import withPreloader from '../withPreloader';
 import ProductThumbnail from "./ProductThumbnail";
 
 function Products() {
+    const [productsData, setProductsData] = useState([]);
+
+    useEffect(() => {
+        // Fetch data from Sanity
+        client
+            .fetch('*[_type == "car"]') // Query all documents of type "car"
+            .then((data) => setProductsData(data))
+            .catch((error) => console.error('Error fetching data:', error));
+    }, []);
+
     return (
         <section className="GreyBG">
             <div className="container">
@@ -13,9 +23,9 @@ function Products() {
                             <h2>Notre offre<small>Lorem ipsum dolor sit amet.</small></h2>
                         </div>
                     </div>
-                    {productsData.map((product, index) => (
+                    {productsData.map((product) => (
                         <ProductThumbnail
-                            key={index}
+                            key={product._id}
                             {...product}
                         />
                     ))}

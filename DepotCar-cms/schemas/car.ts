@@ -10,7 +10,7 @@ const car = {
             name: 'images',
             title: 'Images',
             type: 'array',
-            of: [{ type: 'string' }],
+            of: [{ type: 'image' }],
             validation: (Rule: { required: () => any; }) => Rule.required()
         },
         {
@@ -33,32 +33,38 @@ const car = {
         {
             name: 'HorsePower',
             title: 'Horse Power',
-            type: 'string'
+            type: 'string',
+            validation: (Rule: { required: () => any; }) => Rule.required()
         },
         {
             name: 'CC',
             title: 'CC',
-            type: 'string'
+            type: 'string',
+            validation: (Rule: { required: () => any; }) => Rule.required()
         },
         {
             name: 'TransmissionType',
             title: 'Transmission Type',
-            type: 'string'
+            type: 'string',
+            validation: (Rule: { required: () => any; }) => Rule.required()
         },
         {
             name: 'Fuel',
             title: 'Fuel',
-            type: 'string'
+            type: 'string',
+            validation: (Rule: { required: () => any; }) => Rule.required()
         },
         {
             name: 'Year',
             title: 'Year',
-            type: 'string'
+            type: 'string',
+            validation: (Rule: { required: () => any; }) => Rule.required()
         },
         {
             name: 'Condition',
             title: 'Condition',
-            type: 'string'
+            type: 'string',
+            validation: (Rule: { required: () => any; }) => Rule.required()
         }
     ]
 };
