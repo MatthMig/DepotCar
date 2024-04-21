@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '/images/contact-1-600x400.jpg';
+import img from '/images/contact-1-600x400.webp';
 
 function Contact() {
     return (
