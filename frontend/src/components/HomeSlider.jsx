@@ -6,10 +6,18 @@ import OwlCarousel from 'react-owl-carousel';
 
 function HomeSlider() {
     const IMAGES = [
-        "/images/slider-image-1-1920x700.jpg",
-        "/images/slider-image-2-1920x700.jpg",
-        "/images/slider-image-3-1920x700.jpg"
+        "/images/slider-image-1-1920x700.webp",
+        "/images/slider-image-2-1920x700.webp",
+        "/images/slider-image-3-1920x700.webp"
     ];
+
+    const backgroundStyles = IMAGES.map((image, index) => ({
+        backgroundImage: `url(${image})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        height: '100vh', // Adjust as needed
+    }));
+
     return (
         <section id="home">
             <div className="row">
@@ -17,7 +25,7 @@ function HomeSlider() {
                     <OwlCarousel className='owl-theme' loop margin={10} 
                             items={1} autoplay={true} dots={false}
                             animateOut={'fadeOut'}>
-                        <div className="caption item item-first">
+                        <div className="caption item" style={backgroundStyles[0]}>
                             <div className="container">
                                 <div className="col-md-6 col-sm-12">
                                     <h1>Lorem ipsum dolor sit amet.</h1>
@@ -28,7 +36,7 @@ function HomeSlider() {
                             </div>
                         </div>
 
-                        <div className="caption item item-second">
+                        <div className="caption item" style={backgroundStyles[1]}>
                             <div className="container">
                                 <div className="col-md-6 col-sm-12">
                                     <h1>Distinctio explicabo vero animi culpa facere voluptatem.</h1>
@@ -38,7 +46,7 @@ function HomeSlider() {
                             </div>
                         </div>
 
-                        <div className="caption item item-third">
+                        <div className="caption item" style={backgroundStyles[2]}>
                             <div className="container">
                                 <div className="col-md-6 col-sm-12">
                                     <h1>Efficient Learning Methods</h1>

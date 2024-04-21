@@ -396,18 +396,6 @@
   .caption h3 a { color: #FFF; }
   .caption h3 a:hover { color: #FF3; }
 
-  .home-slider .item-first {
-    background-image: url(../images/slider-image-1-1920x700.jpg);
-  }
-
-  .home-slider .item-second {
-    background-image: url(../images/slider-image-2-1920x700.jpg);
-  }
-
-  .home-slider .item-third {
-    background-image: url(../images/slider-image-3-1920x700.jpg);
-  }
-
 
 
   /*---------------------------------------
