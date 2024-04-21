@@ -1,16 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import urlFor from '../imageUrlBuilder';
 
-function ProductThumbnail({ id, images, title, oldPrice, Price,
+function ProductThumbnail({ _id, images, title, oldPrice, Price,
     HorsePower, CC, TransmissionType, Fuel, Year, Condition }) {
-    const productUrl = `/product/${id}`;
+    const productUrl = `/product/${_id}`;
     const main_image = images[0];
+
     return (
         <div className="col-md-4 col-sm-4">
             <div className="courses-thumb courses-thumb-secondary">
                 <div className="courses-top">
                     <div className="courses-image">
-                        <img src={main_image} className="img-fluid" alt={title} />
+                        <img src={urlFor(main_image).width(300).url()} className="img-fluid" alt={title} /> {/* Generate image URL */}
                     </div>
                     <div className="courses-date">
                         <span title="Author"><i className="fa fa-dashboard"></i> {HorsePower} CH</span>

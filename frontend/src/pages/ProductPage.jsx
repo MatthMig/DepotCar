@@ -10,7 +10,7 @@ function ProductPage({ product }) {
 
   // Creating a new object for the data prop excluding image-related keys and id
   const data = Object.fromEntries(
-    Object.entries(otherDetails).filter(([key]) => !key.includes('image') && key !== 'id')
+    Object.entries(otherDetails).filter(([key]) => !key.includes('image') && !key.startsWith('_'))
   );
 
   return (
