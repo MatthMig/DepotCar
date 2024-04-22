@@ -59,7 +59,7 @@ function Coordinates() {
                             <div>
                                 <div className="form-group">
                                     <form action="#" method="get">
-                                        <input type="email" className="form-control" placeholder="Entrez votre email"
+                                        <input type="email" className="form-control white-text-input" placeholder="Entrez votre email"
                                             name="email" id="email" required />
                                         <input type="submit" className="form-control" name="submit" id="form-submit"
                                             value="Envoyer" />

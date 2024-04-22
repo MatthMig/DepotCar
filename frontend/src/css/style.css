@@ -748,8 +748,12 @@ h4 {
   color: #ffffff;
 }
 
-#email::placeholder {
-  color: #ffffff;
+.form-control::placeholder {
+  color: #909090;
+}
+
+.white-text-input {
+  color: #ffffff !important;
 }
 
 /*---------------------------------------
