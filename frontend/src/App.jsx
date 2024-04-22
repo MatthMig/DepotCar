@@ -11,7 +11,7 @@ import HomePage from './pages/HomePage';
 import NoPage from './pages/NoPage';
 import ProductPage from './pages/ProductPage';
 import TermsPage from './pages/TermsPage';
-import client from './sanityClient'; // Import the Sanity client
+import client from './sanityClient';
 
 function App() {
   const [productsData, setProductsData] = useState([]);

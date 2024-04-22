@@ -6,4 +6,8 @@ export default createClient({
 
   dataset: "production",
 
+  apiVersion: '2024-04-22',
+
+  useCdn: false
+
 });

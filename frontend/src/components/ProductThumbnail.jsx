@@ -1,3 +1,5 @@
+import { faCog, faCube, faDashboard } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import urlFor from '../imageUrlBuilder';
@@ -15,9 +17,15 @@ function ProductThumbnail({ _id, images, title, oldPrice, Price,
                         <img src={urlFor(main_image).width(300).url()} className="img-fluid" alt={title} /> {/* Generate image URL */}
                     </div>
                     <div className="courses-date">
-                        <span title="Author"><i className="fa fa-dashboard"></i> {HorsePower} CH</span>
-                        <span title="Author"><i className="fa fa-cube"></i> {CC}cc</span>
-                        <span title="Views"><i className="fa fa-cog"></i> {TransmissionType}</span>
+                        <span title="Author">
+                            <FontAwesomeIcon icon={faDashboard} /> {HorsePower} CH
+                        </span>
+                        <span title="Author">
+                            <FontAwesomeIcon icon={faCube} /> {CC}cc
+                        </span>
+                        <span title="Views">
+                            <FontAwesomeIcon icon={faCog} /> {TransmissionType}
+                        </span>
                     </div>
                 </div>
 
