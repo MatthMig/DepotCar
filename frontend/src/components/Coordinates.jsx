@@ -17,9 +17,9 @@ function Coordinates() {
                             </address>
 
                             <ul className="social-icon">
-                                <li><a href="#" className="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                <li><a href="#" className="fa fa-twitter"></a></li>
-                                <li><a href="#" className="fa fa-instagram"></a></li>
+                                <li><a href="#" className="fa fa-facebook-square" attr="facebook icon" aria-label="Facebook"></a></li>
+                                <li><a href="#" className="fa fa-twitter" aria-label="Twitter"></a></li>
+                                <li><a href="#" className="fa fa-instagram" aria-label="Instagram"></a></li>
                             </ul>
 
                             <div className="copyright-text">

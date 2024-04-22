@@ -12,7 +12,7 @@ function Menu() {
         <nav className={`navbar custom-navbar fixed-top navbar-expand-lg ${isOpen ? 'open' : ''}`}>
             <div className="container">
                 <div className="navbar-header">
-                    <button className="navbar-toggler" type="button" onClick={toggleMenu}>
+                    <button className="navbar-toggler" type="button" onClick={toggleMenu} aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     {/*  LOGO TEXT HERE */}

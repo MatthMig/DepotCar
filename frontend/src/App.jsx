@@ -21,7 +21,7 @@ function App() {
     client
       .fetch('*[_type == "car"]') // Query all documents of type "car"
       .then((data) => setProductsData(data))
-      .catch((error) => console.error('Error fetching data:', error));
+      .catch(() => setProductsData([]));
   }, []);
 
   return (
