@@ -1,4 +1,4 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useEffect, useState } from 'react';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import Coordinates from './components/Coordinates';
@@ -21,7 +21,7 @@ function App() {
     client
       .fetch('*[_type == "car"]') // Query all documents of type "car"
       .then((data) => setProductsData(data))
-      .catch((error) => console.error('Error fetching data:', error));
+      .catch(() => setProductsData([]));
   }, []);
 
   return (

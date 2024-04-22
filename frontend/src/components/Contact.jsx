@@ -33,7 +33,12 @@ function Contact() {
 
                     <div className="col-md-6 col-sm-12">
                         <div className="contact-image">
-                            <img src={img} className="img-responsive" alt="Smiling Two Girls" />
+                            <img    src={img} 
+                                    className="img-responsive" 
+                                    alt="Smiling Two Girls" 
+                                    width="600"
+                                    height="400"
+                            />
                         </div>
                     </div>
 

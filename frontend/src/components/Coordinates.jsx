@@ -17,9 +17,9 @@ function Coordinates() {
                             </address>
 
                             <ul className="social-icon">
-                                <li><a href="#" className="fa fa-facebook-square" attr="facebook icon"></a></li>
-                                <li><a href="#" className="fa fa-twitter"></a></li>
-                                <li><a href="#" className="fa fa-instagram"></a></li>
+                                <li><a href="#" className="fa fa-facebook-square" attr="facebook icon" aria-label="Facebook"></a></li>
+                                <li><a href="#" className="fa fa-twitter" aria-label="Twitter"></a></li>
+                                <li><a href="#" className="fa fa-instagram" aria-label="Instagram"></a></li>
                             </ul>
 
                             <div className="copyright-text">
@@ -59,7 +59,7 @@ function Coordinates() {
                             <div>
                                 <div className="form-group">
                                     <form action="#" method="get">
-                                        <input type="email" className="form-control" placeholder="Entrez votre email"
+                                        <input type="email" className="form-control white-text-input" placeholder="Entrez votre email"
                                             name="email" id="email" required />
                                         <input type="submit" className="form-control" name="submit" id="form-submit"
                                             value="Envoyer" />
