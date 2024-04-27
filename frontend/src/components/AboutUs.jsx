@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutUs() {
     return (
-        <section className="WhiteBG">
+        <section className="background">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12 col-sm-12">
