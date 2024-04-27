@@ -1046,10 +1046,20 @@ footer .social-icon {
   border-color: var(--background-secondary-color);
   color: var(--footer-color);
 }
+
+.section-btn.btn-default {
+  border-color: var(--text-color);
+  color: var(--text-color);
+}
+
 .section-btn.btn-primary:focus,
 .section-btn.btn-primary:active,
 .section-btn.btn-primary:focus:active,
-.section-btn.btn-primary:hover {
+.section-btn.btn-primary:hover,
+.section-btn.btn-default:focus,
+.section-btn.btn-default:active,
+.section-btn.btn-default:focus:active,
+.section-btn.btn-default:hover {
   background: var(--background-color);
   color: var(--primary-color);
   border-color: var(--background-color);
