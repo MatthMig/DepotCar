@@ -12,7 +12,7 @@ function Menu() {
         <nav className={`navbar custom-navbar fixed-top navbar-expand-lg ${isOpen ? 'open' : ''}`}>
             <div className="container">
                 <div className="navbar-header">
-                    <button className="navbar-toggler" type="button" onClick={toggleMenu} aria-label="Toggle navigation">
+                    <button className="navbar-toggler navbar-light" type="button" onClick={toggleMenu} aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     {/*  LOGO TEXT HERE */}
@@ -24,6 +24,7 @@ function Menu() {
                             <NavLink
                                 to="/"
                                 className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+                                onClick={toggleMenu}
                             >
                                 Accueil
                             </NavLink>
@@ -32,6 +33,7 @@ function Menu() {
                             <NavLink
                                 to="/cars"
                                 className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+                                onClick={toggleMenu}
                             >
                                 Notre offre
                             </NavLink>
@@ -40,6 +42,7 @@ function Menu() {
                             <NavLink
                                 to="/about-us"
                                 className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+                                onClick={toggleMenu}
                             >
                                 A propos de nous
                             </NavLink>
@@ -48,6 +51,7 @@ function Menu() {
                             <NavLink
                                 to="/contact-us"
                                 className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+                                onClick={toggleMenu}
                             >
                                 Contactez-nous
                             </NavLink>

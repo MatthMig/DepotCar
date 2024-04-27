@@ -6,9 +6,9 @@ import OwlCarousel from 'react-owl-carousel';
 
 function HomeSlider() {
     const IMAGES = [
-        "/images/slider-image-1-1920x700.webp",
-        "/images/slider-image-2-1920x700.webp",
-        "/images/slider-image-3-1920x700.webp"
+        "/images/slider-image-1.webp",
+        "/images/slider-image-2.webp",
+        "/images/slider-image-3.webp"
     ];
 
     const backgroundStyles = IMAGES.map((image, index) => ({
